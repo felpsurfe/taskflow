@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lista de tarefas guardadas no TaskFlow.">
+  <title>TaskFlow — Tarefas</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="index.html">TaskFlow</a>
+      <div class="nav__links">
+        <a href="index.html">Resumo</a>
+        <a href="tasks.html" aria-current="page">Tarefas</a>
+        <a class="button button--small" href="new-task.html">Nova tarefa</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <div class="container page-title__content">
+        <div>
+          <p class="eyebrow">Leitura e actualização</p>
+          <h1>Lista de tarefas</h1>
+          <p>Esta página carrega o array guardado e volta a guardá-lo quando uma tarefa muda de estado.</p>
+        </div>
+        <a class="button" href="new-task.html">Adicionar tarefa</a>
+      </div>
+    </section>
+
+    <section class="container content-section" aria-labelledby="taskListTitle">
+      <div class="section-heading section-heading--row">
+        <div>
+          <p class="eyebrow">Dados persistentes</p>
+          <h2 id="taskListTitle">As minhas tarefas</h2>
+        </div>
+        <output id="taskCount" class="count-badge">0 tarefas</output>
+      </div>
+
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>TaskFlow</strong> · dados fictícios guardados no browser.</p>
+      <p>HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+</body>
+</html>
+
